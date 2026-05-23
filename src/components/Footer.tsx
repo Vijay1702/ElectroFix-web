@@ -36,7 +36,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="text-gray-400">Motor & Pump Repair</li>
               <li className="text-gray-400">Fan & Mixer Service</li>
-              <li className="text-gray-400">Gas Stove Service</li>
+              <li className="text-gray-400">Submersible & Mixie Service</li>
               <li className="text-gray-400">Home Appliances</li>
               <li className="text-gray-400">Genuine Spare Parts</li>
             </ul>

@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sri Senthil Spares and Service",
   description: "Trusted Electrical Appliance Sales & Repair Service. Grinder, Fan, Motor repair and genuine spare parts.",
-  keywords: "electrical appliance repair, spare parts, motor repair, fan service, gas stove repair",
+  keywords: "electrical appliance repair, spare parts, motor repair, fan service, submersible repair, mixie service",
 };
 
 export default function RootLayout({

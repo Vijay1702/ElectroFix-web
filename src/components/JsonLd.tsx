@@ -34,7 +34,7 @@ export default function JsonLd() {
       "closes": "20:00"
     },
     "sameAs": [
-      "https://wa.me/910000000000"
+      "https://wa.me/918667264983"
     ]
   };
 

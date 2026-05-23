@@ -10,7 +10,7 @@ import { FaFire, FaWhatsapp } from "react-icons/fa";
 const services = [
   { icon: <FiTool className="text-4xl text-primary" />, title: "Electrical Repair", desc: "Expert repair for motors, fans, and home appliances." },
   { icon: <FiShoppingCart className="text-4xl text-accent" />, title: "Spare Parts", desc: "Genuine spare parts for a wide range of electrical appliances." },
-  { icon: <FiSettings className="text-4xl text-primary" />, title: "Gas Stove Service", desc: "Safe and reliable repair and maintenance for gas stoves." },
+  { icon: <FiSettings className="text-4xl text-primary" />, title: "Submersible & Mixie Service", desc: "Reliable repair and maintenance for submersible pumps and mixies." },
 ];
 
 const categories = [
@@ -21,7 +21,7 @@ const categories = [
       { name: "Motor Repair", desc: "Complete servicing and rewinding of water motors.", icon: <FiActivity />, image: "/images/motor.png" },
       { name: "Fan Repair", desc: "Ceiling fans, table fans, and exhaust fans service.", icon: <FiWind />, image: "/images/fan.png" },
       { name: "Mixer Grinder Service", desc: "Blade replacement, motor repair, and general servicing.", icon: <FiSettings />, image: "/images/mixer.png" },
-      { name: "Gas Stove Repair", desc: "Burner cleaning, pipe replacement, and safety checks.", icon: <FaFire />, image: "/images/gas_stove.png" },
+      { name: "Submersible Repair", desc: "Expert winding and repair for submersible motors.", icon: <FiActivity />, image: "/images/submersible.png" },
     ]
   },
   {
@@ -111,7 +111,7 @@ export default function Home() {
 
             {/* Subheadline */}
             <p className="text-lg md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-              We fix fans, motors, grinders, and gas stoves <span className="text-gray-200 font-medium">quickly</span> and <span className="text-gray-200 font-medium">affordably</span>. Genuine spare parts available.
+              We fix fans, motors, submersibles, and mixies <span className="text-gray-200 font-medium">quickly</span> and <span className="text-gray-200 font-medium">affordably</span>. Genuine spare parts available.
             </p>
 
             {/* Action Buttons */}
@@ -391,7 +391,7 @@ export default function Home() {
                       <option value="Motor Repair">Motor Repair</option>
                       <option value="Fan Service">Fan Service</option>
                       <option value="Mixer Grinder Repair">Mixer Grinder Repair</option>
-                      <option value="Gas Stove Service">Gas Stove Service</option>
+                      <option value="Submersible & Mixie Service">Submersible & Mixie Service</option>
                       <option value="Other">Other / Spares</option>
                     </select>
                   </div>

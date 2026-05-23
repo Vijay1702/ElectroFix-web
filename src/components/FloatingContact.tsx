@@ -9,7 +9,7 @@ export default function FloatingContact() {
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-4">
       {/* Call Button */}
       <motion.a
-        href="tel:+910000000000"
+        href="tel:+919443631389"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: "spring", stiffness: 200 }}
@@ -21,7 +21,7 @@ export default function FloatingContact() {
 
       {/* WhatsApp Button */}
       <motion.a
-        href="https://wa.me/910000000000"
+        href="https://wa.me/918667264983"
         target="_blank"
         rel="noreferrer"
         initial={{ scale: 0 }}

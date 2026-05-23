@@ -54,9 +54,9 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a
-              href="tel:+910000000000"
-              className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-full font-medium hover:bg-primary-hover transition-colors shadow-lg hover:shadow-xl"
+            <a 
+              href="tel:+919443631389" 
+              className="flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full font-semibold hover:bg-primary hover:text-white transition-colors shadow-lg hover:shadow-xl"
             >
               <FiPhone /> Call Now
             </a>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <a
-                href="tel:+910000000000"
+                href="tel:+919443631389"
                 className="flex items-center justify-center gap-2 w-full mt-4 bg-primary text-white px-5 py-3 rounded-full font-medium shadow-md"
               >
                 <FiPhone /> Call Now
