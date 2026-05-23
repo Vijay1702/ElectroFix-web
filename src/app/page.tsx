@@ -28,10 +28,10 @@ const categories = [
     title: "Products & Spares",
     icon: <FiShoppingCart className="text-accent text-3xl" />,
     items: [
-      { name: "Mixer Grinders", desc: "Latest models from top brands.", icon: <FiShoppingCart /> },
-      { name: "Water Pumps", desc: "High-efficiency pumps for residential use.", icon: <FiShoppingCart /> },
-      { name: "Induction Stoves", desc: "Energy-efficient induction cooktops.", icon: <FiShoppingCart /> },
-      { name: "Genuine Spare Parts", desc: "Motors, blades, wires, switches, and more.", icon: <FiShoppingCart /> },
+      { name: "Mixer Grinders", desc: "Latest models from top brands.", icon: <FiShoppingCart />, image: "" },
+      { name: "Water Pumps", desc: "High-efficiency pumps for residential use.", icon: <FiShoppingCart />, image: "" },
+      { name: "Induction Stoves", desc: "Energy-efficient induction cooktops.", icon: <FiShoppingCart />, image: "" },
+      { name: "Genuine Spare Parts", desc: "Motors, blades, wires, switches, and more.", icon: <FiShoppingCart />, image: "" },
     ]
   }
 ];
@@ -134,7 +134,7 @@ export default function Home() {
               className="mt-16 pt-8 border-t border-white/10 flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400"
             >
               <div className="flex flex-col items-center">
-                <span className="text-3xl font-black text-white mb-1 drop-shadow-md">10+</span>
+                <span className="text-3xl font-black text-white mb-1 drop-shadow-md">25+</span>
                 <span className="text-xs font-bold tracking-widest uppercase text-primary">Years Exp.</span>
               </div>
               <div className="flex flex-col items-center">
