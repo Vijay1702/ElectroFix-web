@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import JsonLd from "@/components/JsonLd";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingContact />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );

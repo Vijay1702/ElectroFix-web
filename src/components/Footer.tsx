@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { FiPhone, FiMail, FiMapPin, FiClock } from "react-icons/fi";
+import { FiPhone, FiMapPin, FiClock } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-secondary text-white pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-[96%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           
           {/* Brand */}

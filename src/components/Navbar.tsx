@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FiMenu, FiX, FiPhone, FiMapPin } from "react-icons/fi";
+import { FiMenu, FiX, FiPhone } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
         scrolled ? "bg-white shadow-md py-2" : "bg-white/90 backdrop-blur-md py-4"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1600px] w-[96%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/#home" className="flex items-center gap-3">
             <div className="relative w-12 h-12 md:w-16 md:h-16 overflow-hidden flex-shrink-0 bg-white rounded-full">
