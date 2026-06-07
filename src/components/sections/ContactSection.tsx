@@ -30,13 +30,13 @@ export default function ContactSection() {
     try {
       // Simulate API call to backend/Supabase
       await new Promise(resolve => setTimeout(resolve, 1000));
-      
+
       console.log("Form submitted to backend:", data);
-      
+
       toast.success("Message sent successfully!", {
         description: "We'll get back to you as soon as possible."
       });
-      
+
       reset();
     } catch {
       toast.error("Failed to send message. Please try again or call us.");
@@ -61,11 +61,11 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg text-secondary mb-1">Our Location</h4>
-                    <p className="text-gray-600 mb-2">Sri Senthil Electrofix,<br />123 Repair Street, City, State 123456</p>
-                    <a href="https://share.google/zF98iFkhc8xrBtUDc" target="_blank" rel="noreferrer" className="text-primary font-semibold hover:underline">Open in Google Maps</a>
+                    <p className="text-gray-600 mb-2">Sri Senthil Spares & Services,<br />Thalayari Street, Pattukkottai, Tamil Nadu 614601</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601" target="_blank" rel="noreferrer" className="text-primary font-semibold hover:underline">Open in Google Maps</a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-4">
                   <div className="bg-primary/10 p-4 rounded-full text-primary">
                     <FiPhone size={24} />
@@ -92,19 +92,19 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-bold text-lg text-secondary mb-1">Business Hours</h4>
-                    <p className="text-gray-600">Mon - Sat: 9:30 AM - 9:30 PM<br/>Sunday: 9:30 AM - 3:00 PM</p>
+                    <p className="text-gray-600">Mon - Sat: 9:30 AM - 9:30 PM<br />Sunday: 9:30 AM - 3:00 PM</p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             {/* Google Map Embed */}
             <div className="rounded-2xl overflow-hidden shadow-lg h-64 relative border border-gray-100">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.249216127111!2d76.95371580000001!3d11.0339598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8588cc8b17b6b%3A0x6b4eb50a80e1a12a!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1718000000000!5m2!1sen!2sin" 
-                className="absolute inset-0 w-full h-full border-0" 
-                allowFullScreen={true} 
-                loading="lazy" 
+              <iframe
+                src="https://maps.google.com/maps?q=10.42376,79.31642(Sri+Senthil+Spares+%26+Services)&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                className="absolute inset-0 w-full h-full border-0"
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
@@ -118,31 +118,31 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-gray-700">Full Name</label>
-                    <input 
-                      type="text" 
-                      id="name" 
+                    <input
+                      type="text"
+                      id="name"
                       {...register("name")}
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50`} 
-                      placeholder="John Doe" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.name ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50`}
+                      placeholder="John Doe"
                     />
                     {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      id="phone" 
+                    <input
+                      type="tel"
+                      id="phone"
                       {...register("phone")}
-                      className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50`} 
-                      placeholder="+91 00000 00000" 
+                      className={`w-full px-4 py-3 rounded-xl border ${errors.phone ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50`}
+                      placeholder="+91 00000 00000"
                     />
                     {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="service" className="text-sm font-medium text-gray-700">Service Required</label>
-                  <select 
-                    id="service" 
+                  <select
+                    id="service"
                     {...register("service")}
                     className={`w-full px-4 py-3 rounded-xl border ${errors.service ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50 text-gray-700`}
                   >
@@ -157,17 +157,17 @@ export default function ContactSection() {
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-gray-700">How can we help?</label>
-                  <textarea 
-                    id="message" 
-                    rows={4} 
+                  <textarea
+                    id="message"
+                    rows={4}
                     {...register("message")}
-                    className={`w-full px-4 py-3 rounded-xl border ${errors.message ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50 resize-none`} 
+                    className={`w-full px-4 py-3 rounded-xl border ${errors.message ? 'border-red-500' : 'border-gray-200'} focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors bg-gray-50/50 resize-none`}
                     placeholder="Describe the issue with your appliance..."
                   ></textarea>
                   {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
                 </div>
-                <button 
-                  type="submit" 
+                <button
+                  type="submit"
                   disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-primary/30 transition-all duration-300 flex items-center justify-center gap-2 group disabled:opacity-70 disabled:cursor-not-allowed"
                 >

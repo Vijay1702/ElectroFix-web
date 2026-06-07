@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <FiMapPin className="text-primary text-xl flex-shrink-0 mt-1" />
-                <a href="https://share.google/zF98iFkhc8xrBtUDc" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">Click here to open in Google Maps</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-primary transition-colors">Click here to open in Google Maps</a>
               </li>
               <li className="flex items-center gap-3">
                 <FiPhone className="text-primary text-xl flex-shrink-0" />
