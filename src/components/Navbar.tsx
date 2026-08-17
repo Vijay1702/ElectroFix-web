@@ -19,10 +19,10 @@ export default function Navbar() {
   }, []);
 
   const links = [
-    { name: "Home", path: "/#home" },
-    { name: "About Us", path: "/#about" },
-    { name: "Products & Services", path: "/#services" },
-    { name: "Contact Us", path: "/#contact" },
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Navbar() {
     >
       <div className="max-w-[1600px] w-[96%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          <Link href="/#home" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="relative w-12 h-12 md:w-16 md:h-16 overflow-hidden flex-shrink-0 bg-white rounded-full">
               <Image src="/app-logo.png" alt="Sri Senthil Spares & Services Logo" fill className="object-contain p-1" />
             </div>
