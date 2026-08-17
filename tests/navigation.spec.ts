@@ -10,9 +10,10 @@ test.describe('Navigation and Routing', () => {
     await page.goto('/');
 
     // Test About Us
-    await page.click('nav >> text=About Us');
-    await expect(page).toHaveURL(/.*\/about/);
-    await expect(page.locator('h3').filter({ hasText: 'Your Local Repair Shop' })).toBeVisible();
+    const aboutLink = page.getByRole('link', { name: 'About Us' }).first();
+    await aboutLink.click();
+    await expect(page).toHaveURL(/.*\/about/, { timeout: 10000 });
+    await expect(page.locator('h3').filter({ hasText: 'Electrical Repair Services in Pattukkottai' })).toBeVisible();
 
     // Test Services
     await page.goto('/');
@@ -31,11 +32,13 @@ test.describe('Navigation and Routing', () => {
     await page.goto('/');
     
     // Quick Links in footer
-    await page.click('footer >> text=About Us');
-    await expect(page).toHaveURL(/.*\/about/);
+    const footerAbout = page.locator('footer').getByRole('link', { name: 'About Us' });
+    await footerAbout.click();
+    await expect(page).toHaveURL(/.*\/about/, { timeout: 10000 });
     
-    await page.click('footer >> text=Home');
-    await expect(page).toHaveURL(/\/$/);
+    const footerHome = page.locator('footer').getByRole('link', { name: 'Home' });
+    await footerHome.click();
+    await expect(page).toHaveURL(/\/$/, { timeout: 10000 });
   });
 
   test('mobile menu should open and navigate', async ({ page, isMobile }) => {

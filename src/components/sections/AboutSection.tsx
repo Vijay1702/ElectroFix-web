@@ -32,12 +32,9 @@ export default function AboutSection() {
             className="md:w-1/2"
           >
             <h2 className="text-sm font-bold text-primary tracking-widest uppercase mb-2">About Us</h2>
-            <h3 className="text-3xl font-bold text-secondary mb-6">Your Local Repair Shop</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              Welcome to Sri Senthil Spares and Service. We are your trusted local experts for all electrical appliance repairs. Whether it&apos;s a broken fan, a motor that won&apos;t start, or a mixer grinder that needs fixing, we get it done.
-            </p>
-            <p className="text-gray-600 mb-8 leading-relaxed">
-              We know how important your daily appliances are, which is why we offer fast service at affordable prices. We also sell genuine spare parts to make sure your appliances run smoothly for a long time.
+            <h3 className="text-3xl font-bold text-secondary mb-6">Electrical Repair Services in Pattukkottai</h3>
+            <p className="text-gray-600 mb-8 leading-relaxed text-lg">
+              Sri Senthil Spares & Services is a local electrical appliance repair and spare parts shop serving customers in Pattukkottai for more than 25 years. We provide motor repair, motor rewinding, fan repair, mixer grinder service, submersible motor repair, water motor service and genuine electrical appliance spare parts.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">

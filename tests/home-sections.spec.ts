@@ -27,7 +27,7 @@ test.describe('Home Page Sections Tests', () => {
   });
 
   test('about section renders properly', async ({ page }) => {
-    const aboutHeading = page.locator('h3', { hasText: 'Your Local Repair Shop' });
+    const aboutHeading = page.locator('h3', { hasText: 'Electrical Repair Services in Pattukkottai' });
     await expect(aboutHeading).toBeVisible();
     
     await expect(page.locator('text=Experienced Mechanics')).toBeVisible();

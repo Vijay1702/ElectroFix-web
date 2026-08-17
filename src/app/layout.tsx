@@ -22,8 +22,13 @@ export const metadata: Metadata = {
   description: "Motor, fan, mixer grinder and submersible repair in Pattukkottai. Genuine electrical spare parts available at Sri Senthil Spares & Services. Call or WhatsApp today.",
   keywords: "electrical appliance repair, spare parts, motor repair, fan service, submersible repair, mixie service",
   metadataBase: new URL('https://srisenthilspares.in'),
-  alternates: {
-    canonical: '/',
+  openGraph: {
+    title: 'Sri Senthil Spares & Services | Pattukkottai',
+    description: 'Expert motor, fan, mixer grinder and submersible repair in Pattukkottai. Genuine electrical spare parts available.',
+    url: 'https://srisenthilspares.in',
+    siteName: 'Sri Senthil Spares & Services',
+    locale: 'en_IN',
+    type: 'website',
   },
 };
 
