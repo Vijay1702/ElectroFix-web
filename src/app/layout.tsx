@@ -27,6 +27,8 @@ export const metadata: Metadata = {
   },
 };
 
+import Script from "next/script";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,6 +43,21 @@ export default function RootLayout({
         <JsonLd />
       </head>
       <body className="min-h-full flex flex-col font-sans">
+        {/* Google Analytics */}
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-1ZKL64SCV6" />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1ZKL64SCV6');
+            `,
+          }}
+        />
+        
         <Navbar />
         <main className="flex-grow pt-20">
           {children}
