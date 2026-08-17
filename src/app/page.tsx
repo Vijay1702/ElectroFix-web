@@ -3,7 +3,6 @@ import BrandsSection from "@/components/sections/BrandsSection";
 import AboutSection from "@/components/sections/AboutSection";
 import ServicesSection from "@/components/sections/ServicesSection";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <AboutSection />
       <ServicesSection />
       <WhyChooseUsSection />
-      <TestimonialsSection />
       <ContactSection />
     </div>
   );

@@ -45,9 +45,4 @@ test.describe('Home Page Sections Tests', () => {
     await expect(page.locator('h3', { hasText: 'Good Quality Repairs You Can Trust' })).toBeVisible();
   });
 
-  test('testimonials section renders properly', async ({ page }) => {
-    await expect(page.getByRole('heading', { name: 'What Our Clients Say' })).toBeVisible();
-    await expect(page.locator('text=Excellent').first()).toBeVisible();
-  });
-
 });
