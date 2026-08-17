@@ -35,7 +35,7 @@ test.describe('Contact and Interaction Tests', () => {
     
     // Check WhatsApp button
     const waBtn = page.locator('a:has-text("WhatsApp Us")').first();
-    await expect(waBtn).toHaveAttribute('href', 'https://wa.me/919443631389');
+    await expect(waBtn).toHaveAttribute('href', 'https://wa.me/918667264983');
     
     // Check View Location button
     const locBtn = page.locator('a:has-text("View Location")').first();

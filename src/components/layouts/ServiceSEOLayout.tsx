@@ -22,8 +22,36 @@ export default function ServiceSEOLayout({
   commonProblems,
   brands,
 }: ServiceSEOLayoutProps) {
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": title,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Sri Senthil Spares & Services",
+      "telephone": "+919443631389",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pattukkottai",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "614601",
+        "addressCountry": "IN"
+      }
+    },
+    "description": description,
+    "areaServed": {
+      "@type": "City",
+      "name": "Pattukkottai"
+    }
+  };
+
   return (
     <div className="pt-24 pb-16 bg-gray-50 min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header Section */}
@@ -97,7 +125,7 @@ export default function ServiceSEOLayout({
             <a href="tel:+919443631389" className="flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-primary transition-colors">
               <FiPhone className="text-xl" /> Call Now
             </a>
-            <a href="https://wa.me/919443631389" className="flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-[#25D366] transition-colors">
+            <a href="https://wa.me/918667264983" className="flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-[#25D366] transition-colors">
               <FaWhatsapp className="text-xl" /> WhatsApp Us
             </a>
             <Link href="/contact" className="flex items-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-colors">

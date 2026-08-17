@@ -3,36 +3,44 @@ export default function JsonLd() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Sri Senthil Spares and Service",
-    "image": "https://yourwebsite.com/logo.png",
-    "@id": "https://yourwebsite.com",
-    "url": "https://yourwebsite.com",
-    "telephone": "+910000000000",
+    "image": "https://srisenthilspares.in/app-logo.png",
+    "@id": "https://srisenthilspares.in",
+    "url": "https://srisenthilspares.in",
+    "telephone": "+919443631389",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "123 Business Street, Local Area",
-      "addressLocality": "City",
-      "addressRegion": "State",
-      "postalCode": "Pincode",
+      "streetAddress": "Thalayari Street, near state bank of India, opposite to Sun electronics, Nadimuthu Nagar",
+      "addressLocality": "Pattukkottai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "614601",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 13.000000,
-      "longitude": 80.200000
+      "latitude": 10.42376,
+      "longitude": 79.31642
     },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "09:00",
-      "closes": "20:00"
-    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "21:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:30",
+        "closes": "15:00"
+      }
+    ],
     "sameAs": [
       "https://wa.me/918667264983"
     ]

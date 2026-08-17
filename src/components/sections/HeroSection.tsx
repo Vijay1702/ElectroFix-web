@@ -40,29 +40,33 @@ export default function HeroSection() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl sm:text-6xl md:text-[5rem] lg:text-[6rem] font-black text-white leading-[1.1] tracking-tight mb-6 drop-shadow-2xl">
-            Fast & Reliable <br className="hidden md:block" />
-            <span className="relative inline-block mt-2">
-              <span className="absolute -inset-2 bg-primary/20 blur-2xl rounded-full"></span>
-              <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-300 to-white">Repairs</span>
-            </span>
+          <h1 className="text-4xl sm:text-5xl md:text-[4rem] lg:text-[5rem] font-black text-white leading-[1.1] tracking-tight mb-6 drop-shadow-2xl">
+            Electrical Appliance Repair & Spare Parts in <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-300 to-white">Pattukkottai</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-lg md:text-2xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
-            We fix fans, motors, submersibles, and mixies <span className="text-gray-200 font-medium">quickly</span> and <span className="text-gray-200 font-medium">affordably</span>. Genuine spare parts available.
+          <p className="text-lg md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+            Sri Senthil Spares & Services provides motor repair, fan repair, mixer grinder service, submersible motor repair and genuine electrical spare parts in <span className="text-gray-200 font-medium">Pattukkottai, Tamil Nadu</span>.
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
-            <Link href="#services" className="group relative w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-[0_0_30px_rgba(12,185,193,0.5)] overflow-hidden">
-              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
-              <span className="relative flex items-center gap-2">Our Services <FiArrowRight className="group-hover:translate-x-1 transition-transform" /></span>
-            </Link>
-            
-            <Link href="#contact" className="group w-full sm:w-auto bg-white/5 backdrop-blur-md text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-primary/50 hover:scale-105 transition-all duration-300 flex items-center justify-center">
-              Contact Us
-            </Link>
+          <div className="flex flex-col items-center">
+            <h3 className="text-xl font-bold text-white mb-6 bg-white/10 px-6 py-2 rounded-full border border-white/20">
+              🔧 Need Motor Repair?
+            </h3>
+            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center w-full">
+              <a href="tel:+919443631389" className="group w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-[0_0_30px_rgba(12,185,193,0.5)]">
+                <span className="flex items-center gap-2">📞 Call Now</span>
+              </a>
+              
+              <a href="https://wa.me/918667264983" target="_blank" rel="noreferrer" className="group w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-[0_0_30px_rgba(37,211,102,0.3)]">
+                <span className="flex items-center gap-2">💬 WhatsApp Now</span>
+              </a>
+
+              <a href="https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601" target="_blank" rel="noreferrer" className="group w-full sm:w-auto bg-white/5 backdrop-blur-md text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-primary/50 hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                <span className="flex items-center gap-2">📍 Get Directions</span>
+              </a>
+            </div>
           </div>
 
           {/* Trust Indicators */}
