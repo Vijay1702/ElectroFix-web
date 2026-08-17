@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/hp/Downloads/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node -e ' *)",
+      "Bash(cp \"/c/Users/hp/Downloads/sri_sentil_spares_QR.png\" \"/d/ElectroFix-web/public/images/review-qr.png\" && ls -la /d/ElectroFix-web/public/images/review-qr.png)",
+      "Bash(npx eslint *)",
+      "Bash(node -e \"const fa=require\\('react-icons/fa'\\); console.log\\('FaStar' in fa, 'FaRegStar' in fa, 'FaQuoteLeft' in fa\\);\")",
+      "Bash(cp \"/c/Users/hp/Downloads/sri_sentil_spares_QR.png\" \"/d/ElectroFix-web/public/images/review-qr.png\" && ls -la \"/d/ElectroFix-web/public/images/review-qr.png\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\hp\\Downloads"
+    ]
+  }
+}

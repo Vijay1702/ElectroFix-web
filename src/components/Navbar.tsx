@@ -22,6 +22,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Services", path: "/services" },
+    { name: "Reviews", path: "/reviews" },
     { name: "Contact Us", path: "/contact" },
   ];
 

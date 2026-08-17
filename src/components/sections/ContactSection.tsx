@@ -1,10 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
-import { FiMapPin, FiPhone, FiClock, FiArrowRight } from "react-icons/fi";
+import { FiMapPin, FiPhone, FiClock, FiArrowRight, FiStar } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 
 const formSchema = z.object({
@@ -107,6 +108,20 @@ export default function ContactSection() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
+            </div>
+
+            {/* Google Review QR */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center gap-5">
+              <div className="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden border border-gray-100 relative">
+                <Image src="/images/review-qr.png" alt="Scan to leave Sri Senthil Spares & Services a Google review" fill className="object-contain" />
+              </div>
+              <div>
+                <div className="flex items-center gap-1 text-primary mb-1">
+                  <FiStar size={18} />
+                  <h4 className="font-bold text-lg text-secondary">Enjoyed our service?</h4>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">Scan the QR code with your phone camera to leave us a quick Google review.</p>
+              </div>
             </div>
           </div>
 

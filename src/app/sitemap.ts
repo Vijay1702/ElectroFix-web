@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about',
     '/services',
+    '/reviews',
     '/contact',
     '/motor-repair-pattukkottai',
     '/fan-repair-pattukkottai',
