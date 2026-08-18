@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiZap, FiSettings, FiTool } from "react-icons/fi";
+import { FiZap, FiSettings, FiTool, FiPhone, FiMapPin } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
@@ -50,23 +51,18 @@ export default function HeroSection() {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-xl font-bold text-white mb-6 bg-white/10 px-6 py-2 rounded-full border border-white/20">
-              🔧 Need Motor Repair?
-            </h3>
-            <div className="flex flex-col sm:flex-row gap-5 justify-center items-center w-full">
-              <a href="tel:+919443631389" className="group w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-[0_0_30px_rgba(12,185,193,0.5)]">
-                <span className="flex items-center gap-2">📞 Call Now</span>
-              </a>
-              
-              <a href="https://wa.me/918667264983" target="_blank" rel="noreferrer" className="group w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition-all duration-300 flex items-center justify-center shadow-[0_0_30px_rgba(37,211,102,0.3)]">
-                <span className="flex items-center gap-2">💬 WhatsApp Now</span>
-              </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
+            <a href="tel:+919443631389" className="w-full sm:w-auto bg-primary text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-hover transition-colors duration-300 flex items-center justify-center gap-2 shadow-md">
+              <FiPhone size={20} /> Call Now
+            </a>
 
-              <a href="https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601" target="_blank" rel="noreferrer" className="group w-full sm:w-auto bg-white/5 backdrop-blur-md text-white border border-white/10 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-white/10 hover:border-primary/50 hover:scale-105 transition-all duration-300 flex items-center justify-center">
-                <span className="flex items-center gap-2">📍 Get Directions</span>
-              </a>
-            </div>
+            <a href="https://wa.me/918667264983" target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-[#25D366] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#1ea952] transition-colors duration-300 flex items-center justify-center gap-2 shadow-md">
+              <FaWhatsapp size={20} /> WhatsApp Now
+            </a>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601" target="_blank" rel="noreferrer" className="w-full sm:w-auto bg-white/10 text-white border border-white/15 px-8 py-4 rounded-full font-bold text-lg hover:bg-white/15 transition-colors duration-300 flex items-center justify-center gap-2">
+              <FiMapPin size={20} /> Get Directions
+            </a>
           </div>
 
           {/* Trust Indicators */}
