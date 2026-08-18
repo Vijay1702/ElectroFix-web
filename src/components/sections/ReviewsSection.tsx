@@ -26,7 +26,7 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
       <div className="max-w-[1600px] w-[96%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-primary tracking-widest uppercase mb-2">Customer Reviews</h2>
-          <h3 className="text-3xl md:text-4xl font-bold text-secondary mb-4">What Pattukkottai Says About Us</h3>
+          <h3 className="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Says About Us</h3>
           {hasReviews && (
             <div className="flex items-center justify-center gap-3">
               <Stars rating={average} />
