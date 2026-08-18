@@ -1,11 +1,14 @@
+const SITE_URL = "https://srisenthilelectrofixin.vercel.app";
+const BUSINESS_NAME = "Sri Senthil Spares & Services";
+
 export default function JsonLd() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Sri Senthil Spares and Service",
-    "image": "https://srisenthilspares.in/app-logo.png",
-    "@id": "https://srisenthilspares.in",
-    "url": "https://srisenthilspares.in",
+    "name": BUSINESS_NAME,
+    "image": `${SITE_URL}/app-logo.png`,
+    "@id": SITE_URL,
+    "url": SITE_URL,
     "telephone": "+919443631389",
     "address": {
       "@type": "PostalAddress",
@@ -46,10 +49,41 @@ export default function JsonLd() {
     ]
   };
 
+  // Tells Google explicitly what this site's own brand identity is —
+  // without this, a shared *.vercel.app domain can get attributed to
+  // "Vercel" in search results instead of the actual business.
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": BUSINESS_NAME,
+    "url": SITE_URL,
+    "logo": `${SITE_URL}/app-logo.png`,
+    "sameAs": [
+      "https://wa.me/918667264983"
+    ]
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": BUSINESS_NAME,
+    "url": SITE_URL
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+    </>
   );
 }
