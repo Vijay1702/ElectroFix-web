@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { FiMessageSquare } from "react-icons/fi";
 import type { Review } from "@/data/reviews";
@@ -14,8 +13,7 @@ function Stars({ rating }: { rating: number }) {
   );
 }
 
-const REVIEW_LINK =
-  "https://www.google.com/maps/search/?api=1&query=Sri+Senthil+Spares+and+Services,+Thalayari+St,+near+state+bank+of+India,+opposite+to+Sun+electronics,+Nadimuthu+Nagar,+Pattukkottai,+Tamil+Nadu+614601";
+const REVIEW_LINK = "https://g.page/r/CYMmoN5NocuSEBM/review";
 
 export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
   const hasReviews = reviews.length > 0;
@@ -75,18 +73,13 @@ export default function ReviewsSection({ reviews }: { reviews: Review[] }) {
           </>
         ) : (
           <div className="max-w-md mx-auto text-center bg-white rounded-3xl shadow-[0_10px_50px_rgba(0,0,0,0.05)] border border-gray-100 p-10">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-2xl overflow-hidden border border-gray-100 relative">
-              <Image
-                src="/images/review-qr.png"
-                alt="Scan to leave Sri Senthil Spares & Services a Google review"
-                fill
-                className="object-contain"
-              />
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+              <FaStar size={26} />
             </div>
             <h4 className="text-xl font-bold text-secondary mb-2">Be Our First Google Review</h4>
             <p className="text-gray-600 mb-6">
-              We haven&apos;t collected any reviews yet. Scan the QR code with your phone camera, or use the
-              button below, to be the first to share your experience.
+              We haven&apos;t collected any reviews yet. Tap the button below to be the first to share your
+              experience on Google.
             </p>
             <a
               href={REVIEW_LINK}

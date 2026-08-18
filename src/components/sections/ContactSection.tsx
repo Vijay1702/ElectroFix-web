@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -110,17 +109,22 @@ export default function ContactSection() {
               ></iframe>
             </div>
 
-            {/* Google Review QR */}
+            {/* Google Review CTA */}
             <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 flex items-center gap-5">
-              <div className="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden border border-gray-100 relative">
-                <Image src="/images/review-qr.png" alt="Scan to leave Sri Senthil Spares & Services a Google review" fill className="object-contain" />
+              <div className="w-14 h-14 flex-shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <FiStar size={24} />
               </div>
-              <div>
-                <div className="flex items-center gap-1 text-primary mb-1">
-                  <FiStar size={18} />
-                  <h4 className="font-bold text-lg text-secondary">Enjoyed our service?</h4>
-                </div>
-                <p className="text-gray-600 text-sm leading-relaxed">Scan the QR code with your phone camera to leave us a quick Google review.</p>
+              <div className="flex-1">
+                <h4 className="font-bold text-lg text-secondary mb-1">Enjoyed our service?</h4>
+                <p className="text-gray-600 text-sm leading-relaxed mb-3">Leave us a quick review on Google &mdash; it helps other customers find us.</p>
+                <a
+                  href="https://g.page/r/CYMmoN5NocuSEBM/review"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-semibold text-sm py-2.5 px-5 rounded-full shadow-md hover:shadow-primary/30 transition-all duration-300"
+                >
+                  Review Us on Google
+                </a>
               </div>
             </div>
           </div>
